@@ -50,3 +50,53 @@ B.) To save the file from local:-
 git commit -a -m "<<comment>>" .
 
 9.To commit to the git hub repository, use the following command "git push -u origin master".
+
+
+
+
+Deploying a project
+
+Deployment Setup in local
+
+1.Installing Firebase
+->Install firebase client from https://firebase.google.com/docs/cli#install-cli-windows
+
+2.Go to any command propmpt and install firebase tools with the following command (global setup)
+npm install -g firebase-tools
+
+3.Check whether it is insatlled properly with the following command 
+firebase --help
+
+
+Things to do online
+1.Go to firebase site https://firebase.google.com/
+
+2.Click go to console button
+
+3.Create a project
+
+
+Things to do in the local
+1.Ready the environment variables
+
+2.ng build --prod
+
+3.Go into your project
+
+-> firebase login
+-> firebase init
+
+Then give Y to the question asked to be proceed
+Select only the hosting option as we are hosting only
+Select the project that is created online for this local project to link
+
+?What do you want to use as your public directory? dist/event-creation-proj   // where this is folder inside the dist folder created  in your project while ng build --prod
+? Configure as a single-page app (rewrite all urls to /index.html)? Y 
+? File dist/event-creation-proj/index.html already exists. Overwrite? N
+
+->firebase deploy
+
+Project Console: https://console.firebase.google.com/project/event-creation-proj/overview
+Hosting URL: https://event-creation-proj.firebaseapp.com
+
+Hosting Url is the url to access the application
