@@ -1,0 +1,259 @@
+/*Used https://jsoneditoronline.org/ foo JSON formatting*/
+{
+  "dates": [
+    {
+      "05-04-2019": {
+        "day": "Sunday",
+        "ads": [
+          "img_link1",
+          "img_link2"
+        ],
+        "movies": [
+          {
+            "name": "Kannum Kannum Kollaiyadithal",
+            "censor_rating": "U",
+            "admin_rating": "4.5",
+            "cast": "Dulquer Salmaan,Ritu Varma",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "1",
+                "seats_booked": []
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "2",
+                "seats_booked": []
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "3",
+                "seats_booked": []
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "4",
+                "seats_booked": []
+              }
+            ]
+          },
+          {
+            "name": "Ala Vaikunthapurramulo",
+            "censor_rating": "U",
+            "admin_rating": "4",
+            "cast": "Allu Arjun,Pooja Hegde",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "2",
+                "seats_booked": []
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "3",
+                "seats_booked": []
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "4",
+                "seats_booked": []
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "1",
+                "seats_booked": []
+              }
+            ]
+          },
+          {
+            "name": "Avengers,End Game",
+            "censor_rating": "U",
+            "admin_rating": "2",
+            "cast": "Robert Downey.jr,Rat",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "3",
+                "seats_booked": []
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "4",
+                "seats_booked": []
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "1",
+                "seats_booked": []
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "2",
+                "seats_booked": []
+              }
+            ]
+          },
+          {
+            "name": "Bajirao Matani",
+            "censor_rating": "U",
+            "admin_rating": "2",
+            "cast": "Ranveer Singh,Deepika Padukone",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "4",
+                "seats_booked": []
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "1",
+                "seats_booked": []
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "2",
+                "seats_booked": []
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "3",
+                "seats_booked": []
+              }
+            ]
+          }
+        ]
+      },
+      "06-04-2019": {
+        "day": "Monday",
+        "ads": [
+          "img_link1",
+          "img_link2",
+          "img_link3",
+          "img_link4"
+        ],
+        "movies": [
+          {
+            "name": "Kannum Kannum Kollaiyadithal",
+            "censor_rating": "U",
+            "admin_rating": "4.5",
+            "cast": "Dulquer Salmaan,Ritu Varma",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "1"
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "2"
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "3"
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "4"
+              }
+            ]
+          },
+          {
+            "name": "Ala Vaikunthapurramuloo",
+            "censor_rating": "U",
+            "admin_rating": "4",
+            "cast": "Allu Arjun,Pooja Hegde",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "2"
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "3"
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "4"
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "1"
+              }
+            ]
+          },
+          {
+            "name": "Avengers,End Game",
+            "censor_rating": "U",
+            "admin_rating": "2",
+            "cast": "Robert Downey.jr,Rat",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "3",
+                "seats_booked": []
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "4",
+                "seats_booked": []
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "1",
+                "seats_booked": []
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "2",
+                "seats_booked": []
+              }
+            ]
+          },
+          {
+            "name": "Bajirao Mastani",
+            "censor_rating": "U",
+            "admin_rating": "2",
+            "cast": "Ranveer Singh,Deepika Padukone",
+            "image_link": "",
+            "trailer_link": "",
+            "slot": [
+              {
+                "time": "10:00 AM",
+                "screen": "4",
+                "seats_booked": []
+              },
+              {
+                "time": "01:00 PM",
+                "screen": "1",
+                "seats_booked": []
+              },
+              {
+                "time": "04:00 PM",
+                "screen": "2",
+                "seats_booked": []
+              },
+              {
+                "time": "07:00 PM",
+                "screen": "3",
+                "seats_booked": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
