@@ -1,60 +1,58 @@
-/*Used https://jsoneditoronline.org/ foo JSON formatting*/
 {
   "screens": [
     {
       "screen_number": "1",
       "classes": [
         {
-          "Economy": {
-            "number_of_seats": "100",
-            "number_of_rows": "10",
-            "row_names": [
-              "A",
-              "B",
-              "C",
-              "D",
-              "E",
-              "F",
-              "G",
-              "H",
-              "I",
-              "J"
-            ],
-            "front_most_row": "A",
-            "back_most_row": "J",
-            "seats_per_row": [
-              "A-10",
-              "B-10",
-              "C-10",
-              "D-10",
-              "E-10",
-              "F-10",
-              "G-10",
-              "H-10",
-              "I-10",
-              "J-10"
-            ],
-            "row_wise_gaps": [
-              "A*1B^1*5A^1*10A^1",
-              "B*1B^1*5A^1*10A^1",
-              "C*1B^1*5A^1*10A^1",
-              "D*1B^1*5A^1*10A^1",
-              "E*1B^1*5A^1*10A^1",
-              "F*1B^1*5A^1*10A^1",
-              "G*1B^1*5A^1*10A^1",
-              "H*1B^1*5A^1*10A^1",
-              "I*1B^1*5A^1*10A^1",
-              "J*1B^1*5A^1*10A^1"
-            ],
-            "concession_rows": [
-              "A",
-              "B"
-            ],
-            "blocked_rows": [
-              "J"
-            ],
-            "release_thres_in_hrs": "2"
-          }
+          "class": "Economy",
+          "number_of_seats": "100",
+          "number_of_rows": "10",
+          "row_names": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "front_most_row": "A",
+          "back_most_row": "J",
+          "seats_per_row": [
+            "A-10",
+            "B-10",
+            "C-10",
+            "D-10",
+            "E-10",
+            "F-10",
+            "G-10",
+            "H-10",
+            "I-10",
+            "J-10"
+          ],
+          "row_wise_gaps": [
+            "A*1B^1*5A^1*10A^1",
+            "B*1B^1*5A^1*10A^1",
+            "C*1B^1*5A^1*10A^1",
+            "D*1B^1*5A^1*10A^1",
+            "E*1B^1*5A^1*10A^1",
+            "F*1B^1*5A^1*10A^1",
+            "G*1B^1*5A^1*10A^1",
+            "H*1B^1*5A^1*10A^1",
+            "I*1B^1*5A^1*10A^1",
+            "J*1B^1*5A^1*10A^1"
+          ],
+          "concession_rows": [
+            "A",
+            "B"
+          ],
+          "blocked_rows": [
+            "J"
+          ],
+          "release_thres_in_hrs": "2"
         }
       ]
     },
@@ -62,56 +60,55 @@
       "screen_number": "2",
       "classes": [
         {
-          "Economy": {
-            "number_of_seats": "96",
-            "number_of_rows": "10",
-            "row_names": [
-              "A",
-              "B",
-              "C",
-              "D",
-              "E",
-              "F",
-              "G",
-              "H",
-              "I",
-              "J"
-            ],
-            "front_most_row": "A",
-            "back_most_row": "J",
-            "seats_per_row": [
-              "A-8",
-              "B-8",
-              "C-10",
-              "D-10",
-              "E-10",
-              "F-10",
-              "G-10",
-              "H-10",
-              "I-10",
-              "J-10"
-            ],
-            "row_wise_gaps": [
-              "A*1B^3*4A^1*8A^3",
-              "B*1B^3*4A^1*8A^3",
-              "C*1B^1*5A^1*10A^1",
-              "D*1B^1*5A^1*10A^1",
-              "E*1B^1*5A^1*10A^1",
-              "F*1B^1*5A^1*10A^1",
-              "G*1B^1*5A^1*10A^1",
-              "H*1B^1*5A^1*10A^1",
-              "I*1B^1*5A^1*10A^1",
-              "J*1B^1*5A^1*10A^1"
-            ],
-            "concession_rows": [
-              "A",
-              "B"
-            ],
-            "blocked_rows": [
-              "J"
-            ],
-            "release_thres_in_hrs": "2"
-          }
+          "class": "Economy",
+          "number_of_seats": "96",
+          "number_of_rows": "10",
+          "row_names": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "front_most_row": "A",
+          "back_most_row": "J",
+          "seats_per_row": [
+            "A-8",
+            "B-8",
+            "C-10",
+            "D-10",
+            "E-10",
+            "F-10",
+            "G-10",
+            "H-10",
+            "I-10",
+            "J-10"
+          ],
+          "row_wise_gaps": [
+            "A*1B^3*4A^1*8A^3",
+            "B*1B^3*4A^1*8A^3",
+            "C*1B^1*5A^1*10A^1",
+            "D*1B^1*5A^1*10A^1",
+            "E*1B^1*5A^1*10A^1",
+            "F*1B^1*5A^1*10A^1",
+            "G*1B^1*5A^1*10A^1",
+            "H*1B^1*5A^1*10A^1",
+            "I*1B^1*5A^1*10A^1",
+            "J*1B^1*5A^1*10A^1"
+          ],
+          "concession_rows": [
+            "A",
+            "B"
+          ],
+          "blocked_rows": [
+            "J"
+          ],
+          "release_thres_in_hrs": "2"
         }
       ]
     },
@@ -119,50 +116,49 @@
       "screen_number": "3",
       "classes": [
         {
-          "Economy": {
-            "number_of_seats": "64",
-            "number_of_rows": "8",
-            "row_names": [
-              "A",
-              "B",
-              "C",
-              "D",
-              "E",
-              "F",
-              "G",
-              "H"
-            ],
-            "front_most_row": "A",
-            "back_most_row": "H",
-            "seats_per_row": [
-              "A-8",
-              "B-8",
-              "C-8",
-              "D-8",
-              "E-8",
-              "F-8",
-              "G-8",
-              "H-8"
-            ],
-            "row_wise_gaps": [
-              "A*1B^1*4A^1*8A^1",
-              "B*1B^1*4A^1*8A^1",
-              "C*1B^1*4A^1*8A^1",
-              "D*1B^1*4A^1*8A^1",
-              "E*1B^1*4A^1*8A^1",
-              "F*1B^1*4A^1*8A^1",
-              "G*1B^1*4A^1*8A^1",
-              "H*1B^1*4A^1*8A^1"
-            ],
-            "concession_rows": [
-              "A",
-              "B"
-            ],
-            "blocked_rows": [
-              "H"
-            ],
-            "release_thres_in_hrs": "2"
-          }
+          "class": "Economy",
+          "number_of_seats": "64",
+          "number_of_rows": "8",
+          "row_names": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "front_most_row": "A",
+          "back_most_row": "H",
+          "seats_per_row": [
+            "A-8",
+            "B-8",
+            "C-8",
+            "D-8",
+            "E-8",
+            "F-8",
+            "G-8",
+            "H-8"
+          ],
+          "row_wise_gaps": [
+            "A*1B^1*4A^1*8A^1",
+            "B*1B^1*4A^1*8A^1",
+            "C*1B^1*4A^1*8A^1",
+            "D*1B^1*4A^1*8A^1",
+            "E*1B^1*4A^1*8A^1",
+            "F*1B^1*4A^1*8A^1",
+            "G*1B^1*4A^1*8A^1",
+            "H*1B^1*4A^1*8A^1"
+          ],
+          "concession_rows": [
+            "A",
+            "B"
+          ],
+          "blocked_rows": [
+            "H"
+          ],
+          "release_thres_in_hrs": "2"
         }
       ]
     },
@@ -170,80 +166,80 @@
       "screen_number": "4",
       "classes": [
         {
-          "Economy": {
-            "number_of_seats": "81",
-            "number_of_rows": "9",
-            "row_names": [
-              "A",
-              "B",
-              "C",
-              "D",
-              "E",
-              "F",
-              "G",
-              "H",
-              "I"
-            ],
-            "front_most_row": "I",
-            "back_most_row": "A",
-            "seats_per_row": [
-              "A-9",
-              "B-9",
-              "C-9",
-              "D-9",
-              "E-9",
-              "F-9",
-              "G-9",
-              "H-9",
-              "I-9"
-            ],
-            "row_wise_gaps": [
-              "A*1B^1*3A^1*6A^1*9A^1",
-              "B*1B^1*3A^1*6A^1*9A^1",
-              "C*1B^1*3A^1*6A^1*9A^1",
-              "D*1B^1*3A^1*6A^1*9A^1",
-              "E*1B^1*3A^1*6A^1*9A^1",
-              "F*1B^1*3A^1*6A^1*9A^1",
-              "G*1B^1*3A^1*6A^1*9A^1",
-              "H*1B^1*3A^1*6A^1*9A^1",
-              "I*1B^1*3A^1*6A^1*9A^1"
-            ],
-            "concession_rows": [
-              "I"
-            ],
-            "blocked_rows": [
-              "A"
-            ],
-            "release_thres_in_hrs": "2"
-          },
-          "Elite": {
-            "number_of_seats": "24",
-            "number_of_rows": "3",
-            "row_names": [
-              "A",
-              "B",
-              "C"
-            ],
-            "front_most_row": "C",
-            "back_most_row": "A",
-            "seats_per_row": [
-              "A-10",
-              "B-8",
-              "C-6"
-            ],
-            "row_wise_gaps": [
-              "A*1B^1*10A^1",
-              "B*1B^2*8A^2",
-              "C*1B^3*6A^3"
-            ],
-            "concession_rows": [
-              "C"
-            ],
-            "blocked_rows": [
-              "A"
-            ],
-            "release_thres_in_hrs": "2"
-          }
+          "class": "Economy",
+          "number_of_seats": "81",
+          "number_of_rows": "9",
+          "row_names": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I"
+          ],
+          "front_most_row": "I",
+          "back_most_row": "A",
+          "seats_per_row": [
+            "A-9",
+            "B-9",
+            "C-9",
+            "D-9",
+            "E-9",
+            "F-9",
+            "G-9",
+            "H-9",
+            "I-9"
+          ],
+          "row_wise_gaps": [
+            "A*1B^1*3A^1*6A^1*9A^1",
+            "B*1B^1*3A^1*6A^1*9A^1",
+            "C*1B^1*3A^1*6A^1*9A^1",
+            "D*1B^1*3A^1*6A^1*9A^1",
+            "E*1B^1*3A^1*6A^1*9A^1",
+            "F*1B^1*3A^1*6A^1*9A^1",
+            "G*1B^1*3A^1*6A^1*9A^1",
+            "H*1B^1*3A^1*6A^1*9A^1",
+            "I*1B^1*3A^1*6A^1*9A^1"
+          ],
+          "concession_rows": [
+            "I"
+          ],
+          "blocked_rows": [
+            "A"
+          ],
+          "release_thres_in_hrs": "2"
+        },
+        {
+          "class": "Elite",
+          "number_of_seats": "24",
+          "number_of_rows": "3",
+          "row_names": [
+            "A",
+            "B",
+            "C"
+          ],
+          "front_most_row": "C",
+          "back_most_row": "A",
+          "seats_per_row": [
+            "A-10",
+            "B-8",
+            "C-6"
+          ],
+          "row_wise_gaps": [
+            "A*1B^1*10A^1",
+            "B*1B^2*8A^2",
+            "C*1B^3*6A^3"
+          ],
+          "concession_rows": [
+            "C"
+          ],
+          "blocked_rows": [
+            "A"
+          ],
+          "release_thres_in_hrs": "2"
         }
       ]
     }
