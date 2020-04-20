@@ -1,0 +1,47 @@
+
+<div class="row" *ngIf="getSelectedDate">
+
+  <div class="col-md-6 col-lg-6 col-sm-12" *ngFor="let key of moviesList">
+    
+ <div class="card bg-light mb-3 mr-1">
+    <div class="row no-gutters">
+      <div class="col-md-12">
+        <h5 class="card-header">{{key.name}} - {{key.censor_rating}}</h5>
+      </div>
+      <div class="col-md-4">
+        <img src="{{key.image_link}}" class="card-img p-1" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <!-- <h5 class="card-title">{{key.name}}</h5> -->
+          <!-- <h5 class="card-title">Title</h5> -->
+          
+          <div class="card-rating"><span class="font-weight-bold">Rating </span>: {{key.admin_rating}}</div>
+          <p class="card-text">
+            <span class="font-weight-bold">Cast :</span>
+            <span>{{key.cast}}</span>
+          </p>
+            <p class="font-weight-bold">Description</p>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural lead-in to additional content. 
+              This content is a little bit longer.</p>
+           
+              <div class="d-flex justify-content-end w-100 mr-4 mb-3">
+                <!-- <form  #postForm="ngForm" (ngSubmit)="bookTicket(postForm.value)"> -->
+                <!-- <input type="hidden" id="{{movies[i]}}" name="{{movies[i]}}"  value={{movies[i]}}/> -->
+                <a href="#" class="btn btn-outline-info ml-1">Watch Trailer</a>
+                <input type="submit" value="Book Now" class="btn btn-primary ml-1">
+              <!-- </form> -->
+              </div>
+        </div>
+      </div>
+  
+     
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row" *ngIf="!getSelectedDate">
+  <h1>No Shows Today. Kindly try for other dates</h1>
+</div>
