@@ -1,0 +1,8 @@
+###########################################################
+Commit No # 7fc3309cb441ac4aee5948627adb1a2929cfadc5
+Author : Ajay
+Date : 22/04/2020 02:00 PM
+Notable Changes : Added the ng bootstrap plugin
+Use the following command
+npm install @ng-bootstrap/ng-bootstrap
+###########################################################
