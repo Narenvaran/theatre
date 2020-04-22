@@ -1,0 +1,9 @@
+<ngb-carousel #myCarousel="ngbCarousel" *ngIf="carouselInput">
+    <ng-template ngbSlide *ngFor="let input of carouselInput;let i = index" id="{{i}}">
+      <div class="picsum-img-wrapper custom-display">
+        <div class="carousel-caption">
+            <h4>Ad Banner - {{i}}</h4>
+        </div>
+      </div>
+  </ng-template>
+</ngb-carousel>
