@@ -30,7 +30,7 @@
                 <!-- <form  #postForm="ngForm" (ngSubmit)="bookTicket(postForm.value)"> -->
                 <!-- <input type="hidden" id="{{movies[i]}}" name="{{movies[i]}}"  value={{movies[i]}}/> -->
                 <a href="#" class="btn btn-outline-info ml-1">Watch Trailer</a>
-                <input type="submit" value="Book Now" class="btn btn-primary ml-1">
+                <input type="submit" (click)="goToBookNow()" value="Book Now" class="btn btn-primary ml-1">
               <!-- </form> -->
               </div>
         </div>

@@ -9,13 +9,19 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { SampleDateComponent } from './sample-date/sample-date.component';
 import { HomeAdCarouselComponent } from './home-ad-carousel/home-ad-carousel.component';
+import { BookNowScreenComponent } from './book-now-screen/book-now-screen.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AppHomeComponent } from './app-home/app-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieCardComponent,
     SampleDateComponent,
-    HomeAdCarouselComponent
+    HomeAdCarouselComponent,
+    BookNowScreenComponent,
+    PageNotFoundComponent,
+    AppHomeComponent
   ],
   imports: [
     BrowserModule,

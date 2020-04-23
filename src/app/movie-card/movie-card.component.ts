@@ -3,6 +3,7 @@ import { HttpClient }    from '@angular/common/http';
 import { AjaxService } from '../services/ajax.service';
 import { DatesService } from '../services/date.service';
 import { DateCommuteService } from '../services/datecommute.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movie-card',
@@ -12,14 +13,15 @@ import { DateCommuteService } from '../services/datecommute.service';
 export class MovieCardComponent implements OnInit {
   //var for store movies on a particular day
   moviesList:{}[];
- 
+
   //value will be stored after computing the day index (userdate - today)
   fetchThisRecord = 0;
 
   constructor(private http:HttpClient,
               private ajaxService:AjaxService,
               private dateService:DatesService,
-              private dateCommuteService:DateCommuteService) {
+              private dateCommuteService:DateCommuteService,
+              private router: Router) {
         //Empty constructor
   }
 
@@ -56,6 +58,10 @@ export class MovieCardComponent implements OnInit {
         console.log("this is the error from carousel ajax call ->"+error)
       }
     );
+  }
+
+   goToBookNow(){
+    this.router.navigate(['/book']);
   }
 
 }
