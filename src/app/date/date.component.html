@@ -1,0 +1,45 @@
+<h4 class="headsetting" >Fetch movies for the date</h4>
+    <ngb-carousel [showNavigationArrows]="false"> 
+    <ng-template ngbSlide >
+      <div  class="flexdisp" >
+        <div class="container">
+          <div class="row btn-danger">
+            <div class="col-sm dategriddsg "  *ngFor="let datearr of datearray.slice(0,3)" (click)="onSave($event)">
+           
+              {{datearr |date:'dd-LL-yyyy' }}
+            </div>
+           
+          </div>
+        </div>
+       
+        </div>
+      </ng-template>
+      <ng-template ngbSlide >
+        <div  class="flexdisp" >
+          <div class="container">
+            <div class="row btn-danger">
+              <div class="col-sm dategriddsg "  *ngFor="let datearr of datearray.slice(3,6)" (click)="onSave($event)">
+                {{datearr |date:'dd-LL-yyyy' }}
+              
+              </div>
+             
+            </div>
+          </div>
+         
+          </div>
+        </ng-template>
+        <ng-template ngbSlide >
+          <div  class="flexdisp" >
+            <div class="container">
+              <div class="row btn-danger">
+                <div class="col-sm dategriddsg "  *ngFor="let datearr of datearray.slice(6,7)" (click)="onSave($event)" >
+                  {{datearr |date:'dd-LL-yyyy' }}
+              
+                </div>
+               
+              </div>
+            </div>
+           
+            </div>
+          </ng-template>
+    </ngb-carousel> 

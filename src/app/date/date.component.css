@@ -1,0 +1,25 @@
+
+
+.dategriddsg{
+  padding: 3%; 
+ margin-bottom: 3%;
+}
+.btn-danger { 
+    border-color: #fff;
+    background: #09c !important; 
+    color:#FFF;
+    border: white
+}
+.dategriddsg:hover { 
+    border-color:white !important;
+    color:white; 
+    background-color:black  !important;
+    cursor: pointer;
+     border: gray;}
+
+.flexdisp{
+display: flex;
+}
+.headsetting{
+    text-align: center;
+}
