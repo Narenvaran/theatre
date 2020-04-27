@@ -1,25 +1,29 @@
-
-
-.dategriddsg{
-  padding: 3%; 
- margin-bottom: 3%;
+.date-container{
+    display:inline-flex!important;
+    width: 100%;
+    margin-left: 12%;
+    height: 100px;
 }
-.btn-danger { 
-    border-color: #fff;
-    background: #09c !important; 
-    color:#FFF;
-    border: white
-}
-.dategriddsg:hover { 
-    border-color:white !important;
-    color:white; 
-    background-color:black  !important;
-    cursor: pointer;
-     border: gray;}
 
-.flexdisp{
-display: flex;
-}
-.headsetting{
+.dateTile {
+    background-color: #e6e0e0;
+    border: 1px solid #b9aaaa;
+    width: 25%;
     text-align: center;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.date-custom-display{
+    border: 1px solid black;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,118,121,1) 0%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,118,121,1) 0%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,118,121,1) 0%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#667679",GradientType=1);
+}
+
+.active-date{
+    background-color: #e68484;
 }
