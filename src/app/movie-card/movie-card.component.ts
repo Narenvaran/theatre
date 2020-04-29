@@ -4,6 +4,8 @@ import { AjaxService } from '../services/ajax.service';
 import { DatesService } from '../services/date.service';
 import { DateCommuteService } from '../services/datecommute.service';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-movie-card',
@@ -17,11 +19,18 @@ export class MovieCardComponent implements OnInit {
   //value will be stored after computing the day index (userdate - today)
   fetchThisRecord = 0;
 
+  videoLink: string;
+
+  dcSubsptn:Subscription;
+
+  ajaxSubsptn:Subscription;
+
   constructor(private http:HttpClient,
               private ajaxService:AjaxService,
               private dateService:DatesService,
               private dateCommuteService:DateCommuteService,
-              private router: Router) {
+              private router: Router,
+              private modalService: NgbModal) {
         //Empty constructor
   }
 
@@ -30,7 +39,7 @@ export class MovieCardComponent implements OnInit {
 
   ngOnInit(): void {
     //method for fetch movielist
-    this.dateCommuteService.selectedDate.subscribe(
+    this.dcSubsptn = this.dateCommuteService.selectedDate.subscribe(
       selectedDate => 
       this.fetchMovieList(selectedDate)
       );
@@ -40,7 +49,7 @@ export class MovieCardComponent implements OnInit {
   private fetchMovieList(selectedDate){
   // HTTP call for fetch data from firebase JSON
   this.getSelectedDate = selectedDate;
-  this.ajaxService.getMethod('https://devitheater-4c18c.firebaseio.com/dates.json').subscribe(
+  this.ajaxSubsptn = this.ajaxService.getMethod('https://devitheater-4c18c.firebaseio.com/dates.json').subscribe(
       /* 
         1. On Successful JSON return fetch required index.
         2. daysBetween(this.getSelectedDate) method will return the future date index to fetch the correct list of movie
@@ -60,8 +69,18 @@ export class MovieCardComponent implements OnInit {
     );
   }
 
-   goToBookNow(){
+  goToBookNow(){
     this.router.navigate(['/book']);
+  }
+
+  watchTrailer(content,link) {
+    this.modalService.open(content, { size: 'xl' });
+    this.videoLink = link.replace("watch?v=","embed/");
+  }
+
+  ngOnDestroy(){
+    this.dcSubsptn.unsubscribe();
+    this.ajaxSubsptn.unsubscribe();
   }
 
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Subscribable } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-page-not-found',
@@ -8,7 +8,7 @@ import { Subscribable } from 'rxjs';
   styleUrls: ['./page-not-found.component.css']
 })
 export class PageNotFoundComponent implements OnInit {
-  pnfSubscription:any;
+  pnfSubscription:Subscription;
   content:string;
   constructor( private router: Router,
                private route: ActivatedRoute) { }

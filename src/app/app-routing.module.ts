@@ -4,7 +4,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BookNowScreenComponent } from './book-now-screen/book-now-screen.component';
 import { AppHomeComponent } from './app-home/app-home.component';
 
-
 const routes: Routes = [
   { path: '', component: AppHomeComponent },
   { path: 'book',component: BookNowScreenComponent},

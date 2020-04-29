@@ -1,9 +1,6 @@
-
 <div class="row" *ngIf="getSelectedDate">
-
-  <div class="col-md-6 col-lg-6 col-sm-12" *ngFor="let key of moviesList">
-    
- <div class="card bg-light mb-3 mr-1">
+  <div class="col-md-6 col-lg-6 col-sm-12" *ngFor="let key of moviesList">  
+  <div class="card bg-light mb-3 mr-1">
     <div class="row no-gutters">
       <div class="col-md-12">
         <h5 class="card-header">{{key.name}} - {{key.censor_rating}}</h5>
@@ -29,19 +26,30 @@
               <div class="d-flex justify-content-end w-100 mr-4 mb-3">
                 <!-- <form  #postForm="ngForm" (ngSubmit)="bookTicket(postForm.value)"> -->
                 <!-- <input type="hidden" id="{{movies[i]}}" name="{{movies[i]}}"  value={{movies[i]}}/> -->
-                <a href="#" class="btn btn-outline-info ml-1">Watch Trailer</a>
+                <a class="btn btn-outline-info ml-1" (click)="watchTrailer(content,key.trailer_link)">Watch Trailer</a>
                 <input type="submit" (click)="goToBookNow()" value="Book Now" class="btn btn-primary ml-1">
               <!-- </form> -->
               </div>
         </div>
-      </div>
-  
-     
+      </div>    
     </div>
   </div>
 </div>
 </div>
-
 <div class="row" *ngIf="!getSelectedDate">
   <h1>No shows available on these days. Kindly try for other dates</h1>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Trailer</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" [src]="videoLink | safe: 'resourceUrl'" allowfullscreen></iframe>
+      </div>
+  </div>
+</ng-template>

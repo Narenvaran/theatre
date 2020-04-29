@@ -12,6 +12,7 @@ import { BookNowScreenComponent } from './book-now-screen/book-now-screen.compon
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppHomeComponent } from './app-home/app-home.component';
 import { DateComponent } from './date/date.component';
+import { SafePipe } from './custom-pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DateComponent } from './date/date.component';
     BookNowScreenComponent,
     PageNotFoundComponent,
     AppHomeComponent,
-    DateComponent
+    DateComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
