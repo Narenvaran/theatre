@@ -2,8 +2,6 @@ import { Component, OnInit,ViewChild, AfterViewInit } from '@angular/core';
 import { NgbCarousel,NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { AjaxService } from '../services/ajax.service';
 import { DatesService } from '../services/date.service';
-import { DateCommuteService } from '../services/datecommute.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home-ad-carousel',
@@ -14,20 +12,15 @@ export class HomeAdCarouselComponent implements OnInit {
 
  @ViewChild('myCarousel', {static: false}) myCarousel: NgbCarousel;
  carouselInput:string[];
- dcSubsptn:Subscription;
-  
+
   constructor(private config: NgbCarouselConfig,
               private ajaxService:AjaxService,
-              private dateService:DatesService,
-              private dateCommuteService:DateCommuteService) {
+              private dateService:DatesService) {
     this.config.interval = 5000;
   }
 
   ngOnInit() {
-    this.dcSubsptn = this.dateCommuteService.selectedDate.subscribe(
-      selectedDate => 
-      this.renderHomeAds(selectedDate)
-      );
+      this.renderHomeAds(this.dateService.getTodaysDate())
   }
 
   ngAfterViewInit(){
@@ -49,9 +42,4 @@ export class HomeAdCarouselComponent implements OnInit {
   goToFirstCard(){
     this.myCarousel.select("0");
   }
-
-  ngOnDestroy(){
-    this.dcSubsptn.unsubscribe();
-  }
-
 }
