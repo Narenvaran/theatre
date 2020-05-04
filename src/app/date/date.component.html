@@ -1,5 +1,5 @@
-<ngb-carousel [interval]="false" [showNavigationIndicators]="false"> 
-    <ng-template ngbSlide *ngFor="let dateArr of finalArray">
+<ngb-carousel [interval]="false" [showNavigationIndicators]="false" #dateCarousel="ngbCarousel"> 
+    <ng-template ngbSlide *ngFor="let dateArr of finalArray;let i = index" id="{{i}}"> 
       <div class="picsum-img-wrapper date-custom-display">
         <div class="date-container">
             <div class="dateTile" *ngFor="let dateObj of dateArr"        

@@ -29,7 +29,7 @@ export class DatesService {
   
       // Calculate the difference in milliseconds
       var difference_ms = date1_ms - date2_ms;
-      let result = Math.round(difference_ms / one_day)
+      let result = Math.ceil(difference_ms / one_day)
   
       // Convert back to days and return
       return result === -1? 0:result;
