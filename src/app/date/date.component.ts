@@ -40,6 +40,10 @@ export class DateComponent implements OnInit {
     this.dteCarousel.select(this.currentDateIndex);
   }
 
+  ngOnDestroy(){
+    this.dcSubsptn.unsubscribe();
+  }
+
   onDateClick(event,index){
     this.selectedItemIndex = index;
     this.dateCommuteService.setSelectedDate(event.target.attributes["valueobj"]["nodeValue"]);
